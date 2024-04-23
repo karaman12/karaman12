@@ -9,84 +9,67 @@
 <body>
     <header>
         <div class="container">
-            <h1><a href="#">E-Ticaret Sitesi</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Anasayfa</a></li>
-                    <li><a href="#">Ürünler</a></li>
-                    <li><a href="#">Sepetim</a></li>
-                    <li><a href="#">Hesabım</a></li>
-                </ul>
-            </nav>
+            <img src="sol_resim.jpg" alt="Sol Resim">
+            <img src="sag_resim.jpg" alt="Sağ Resim">
         </div>
     </header>
     <main>
         <div class="container">
-            <section class="products">
-                <!-- Ürünler buraya eklenecek -->
-            </section>
+            <div class="product-images">
+                <img src="kucuk_resim1.jpg" alt="Ürün 1">
+                <img src="kucuk_resim2.jpg" alt="Ürün 2">
+                <img src="kucuk_resim3.jpg" alt="Ürün 3">
+                <!-- Diğer küçük resimler buraya eklenecek -->
+            </div>
         </div>
     </main>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 E-Ticaret Sitesi. Tüm hakları saklıdır.</p>
-        </div>
+        <p>&copy; 2024 Bu siteyi tasarlayan Ahmet Ertekin. Bütün telif hakları ona aittir.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
-/* Temel CSS stilleri */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
 }
 
-header h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+header img {
+    max-width: 45%;
 }
 
 main {
     padding: 20px 0;
 }
 
+.product-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-images img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+}
+
 footer {
+    text-align: center;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
 }
+
