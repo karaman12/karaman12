@@ -9,17 +9,17 @@
 <body>
     <header>
         <div class="container">
-            <img src="sol_resim.jpg" alt="Sol Resim">
-            <img src="sag_resim.jpg" alt="Sağ Resim">
+            <img class="animal-image" src="sag_hayvan_resim.jpg" alt="Sağdaki Hayvan Resmi">
+            <img class="animal-image" src="sol_hayvan_resim.jpg" alt="Soldaki Hayvan Resmi">
         </div>
     </header>
     <main>
         <div class="container">
             <div class="product-images">
-                <img src="kucuk_resim1.jpg" alt="Ürün 1">
-                <img src="kucuk_resim2.jpg" alt="Ürün 2">
-                <img src="kucuk_resim3.jpg" alt="Ürün 3">
-                <!-- Diğer küçük resimler buraya eklenecek -->
+                <img src="kucuk_insan_resim1.jpg" alt="Ürün 1">
+                <img src="kucuk_insan_resim2.jpg" alt="Ürün 2">
+                <img src="kucuk_insan_resim3.jpg" alt="Ürün 3">
+                <!-- Diğer küçük insan resimleri buraya eklenecek -->
             </div>
         </div>
     </main>
@@ -46,7 +46,7 @@ header {
     background-color: #f1f1f1;
 }
 
-header img {
+.animal-image {
     max-width: 45%;
 }
 
@@ -72,4 +72,3 @@ footer {
     color: #fff;
     padding: 20px 0;
 }
-
